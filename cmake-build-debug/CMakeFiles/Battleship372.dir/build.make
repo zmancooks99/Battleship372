@@ -70,17 +70,62 @@ CMakeFiles/Battleship372.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship372.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ZacharyMason/CLionProjects/Battleship372/main.cpp -o CMakeFiles/Battleship372.dir/main.cpp.s
 
+CMakeFiles/Battleship372.dir/Model/Board.cpp.o: CMakeFiles/Battleship372.dir/flags.make
+CMakeFiles/Battleship372.dir/Model/Board.cpp.o: ../Model/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Battleship372.dir/Model/Board.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Battleship372.dir/Model/Board.cpp.o -c /Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp
+
+CMakeFiles/Battleship372.dir/Model/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship372.dir/Model/Board.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp > CMakeFiles/Battleship372.dir/Model/Board.cpp.i
+
+CMakeFiles/Battleship372.dir/Model/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship372.dir/Model/Board.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp -o CMakeFiles/Battleship372.dir/Model/Board.cpp.s
+
+CMakeFiles/Battleship372.dir/Game.cpp.o: CMakeFiles/Battleship372.dir/flags.make
+CMakeFiles/Battleship372.dir/Game.cpp.o: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Battleship372.dir/Game.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Battleship372.dir/Game.cpp.o -c /Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp
+
+CMakeFiles/Battleship372.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship372.dir/Game.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp > CMakeFiles/Battleship372.dir/Game.cpp.i
+
+CMakeFiles/Battleship372.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship372.dir/Game.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp -o CMakeFiles/Battleship372.dir/Game.cpp.s
+
+CMakeFiles/Battleship372.dir/Model/UI.cpp.o: CMakeFiles/Battleship372.dir/flags.make
+CMakeFiles/Battleship372.dir/Model/UI.cpp.o: ../Model/UI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Battleship372.dir/Model/UI.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Battleship372.dir/Model/UI.cpp.o -c /Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp
+
+CMakeFiles/Battleship372.dir/Model/UI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship372.dir/Model/UI.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp > CMakeFiles/Battleship372.dir/Model/UI.cpp.i
+
+CMakeFiles/Battleship372.dir/Model/UI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship372.dir/Model/UI.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp -o CMakeFiles/Battleship372.dir/Model/UI.cpp.s
+
 # Object files for target Battleship372
 Battleship372_OBJECTS = \
-"CMakeFiles/Battleship372.dir/main.cpp.o"
+"CMakeFiles/Battleship372.dir/main.cpp.o" \
+"CMakeFiles/Battleship372.dir/Model/Board.cpp.o" \
+"CMakeFiles/Battleship372.dir/Game.cpp.o" \
+"CMakeFiles/Battleship372.dir/Model/UI.cpp.o"
 
 # External object files for target Battleship372
 Battleship372_EXTERNAL_OBJECTS =
 
 Battleship372: CMakeFiles/Battleship372.dir/main.cpp.o
+Battleship372: CMakeFiles/Battleship372.dir/Model/Board.cpp.o
+Battleship372: CMakeFiles/Battleship372.dir/Game.cpp.o
+Battleship372: CMakeFiles/Battleship372.dir/Model/UI.cpp.o
 Battleship372: CMakeFiles/Battleship372.dir/build.make
 Battleship372: CMakeFiles/Battleship372.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Battleship372"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Battleship372"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Battleship372.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

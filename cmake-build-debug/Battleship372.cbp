@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Game.h">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.h">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.h">
+			<Option target="Battleship372"/>
+		</Unit>
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/main.cpp">
 			<Option target="Battleship372"/>
 		</Unit>

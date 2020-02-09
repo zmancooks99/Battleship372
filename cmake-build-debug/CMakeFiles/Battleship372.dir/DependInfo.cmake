@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Game.cpp.o"
+  "/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Model/Board.cpp.o"
+  "/Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Model/UI.cpp.o"
   "/Users/ZacharyMason/CLionProjects/Battleship372/main.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

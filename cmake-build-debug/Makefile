@@ -123,6 +123,87 @@ Battleship372/fast:
 	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/build
 .PHONY : Battleship372/fast
 
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Model/Board.o: Model/Board.cpp.o
+
+.PHONY : Model/Board.o
+
+# target to build an object file
+Model/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/Board.cpp.o
+.PHONY : Model/Board.cpp.o
+
+Model/Board.i: Model/Board.cpp.i
+
+.PHONY : Model/Board.i
+
+# target to preprocess a source file
+Model/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/Board.cpp.i
+.PHONY : Model/Board.cpp.i
+
+Model/Board.s: Model/Board.cpp.s
+
+.PHONY : Model/Board.s
+
+# target to generate assembly for a file
+Model/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/Board.cpp.s
+.PHONY : Model/Board.cpp.s
+
+Model/UI.o: Model/UI.cpp.o
+
+.PHONY : Model/UI.o
+
+# target to build an object file
+Model/UI.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.o
+.PHONY : Model/UI.cpp.o
+
+Model/UI.i: Model/UI.cpp.i
+
+.PHONY : Model/UI.i
+
+# target to preprocess a source file
+Model/UI.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.i
+.PHONY : Model/UI.cpp.i
+
+Model/UI.s: Model/UI.cpp.s
+
+.PHONY : Model/UI.s
+
+# target to generate assembly for a file
+Model/UI.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.s
+.PHONY : Model/UI.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Battleship372"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Model/Board.o"
+	@echo "... Model/Board.i"
+	@echo "... Model/Board.s"
+	@echo "... Model/UI.o"
+	@echo "... Model/UI.i"
+	@echo "... Model/UI.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
