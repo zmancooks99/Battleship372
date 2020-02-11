@@ -7,8 +7,13 @@
 
 #include "Model/Board.h"
 #include "Model/AI.h"
+#include "View/UI.h"
 
 class Game {
+
+private:
+
+public:
 
 };
 

@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Battleship372.dir/Game.cpp.o"
   "CMakeFiles/Battleship372.dir/Model/AI.cpp.o"
   "CMakeFiles/Battleship372.dir/Model/Board.cpp.o"
-  "CMakeFiles/Battleship372.dir/View/CI.cpp.o"
+  "CMakeFiles/Battleship372.dir/View/UI.cpp.o"
   "CMakeFiles/Battleship372.dir/main.cpp.o"
 )
 

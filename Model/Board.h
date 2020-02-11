@@ -18,7 +18,6 @@ private:
 
     std::vector<int> _b;
 
-    int getCoord(int i);
 public:
     Board();
 

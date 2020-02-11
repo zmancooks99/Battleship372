@@ -204,32 +204,32 @@ Model/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/Board.cpp.s
 .PHONY : Model/Board.cpp.s
 
-View/CI.o: View/CI.cpp.o
+View/UI.o: View/UI.cpp.o
 
-.PHONY : View/CI.o
+.PHONY : View/UI.o
 
 # target to build an object file
-View/CI.cpp.o:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.o
-.PHONY : View/CI.cpp.o
+View/UI.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/UI.cpp.o
+.PHONY : View/UI.cpp.o
 
-View/CI.i: View/CI.cpp.i
+View/UI.i: View/UI.cpp.i
 
-.PHONY : View/CI.i
+.PHONY : View/UI.i
 
 # target to preprocess a source file
-View/CI.cpp.i:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.i
-.PHONY : View/CI.cpp.i
+View/UI.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/UI.cpp.i
+.PHONY : View/UI.cpp.i
 
-View/CI.s: View/CI.cpp.s
+View/UI.s: View/UI.cpp.s
 
-.PHONY : View/CI.s
+.PHONY : View/UI.s
 
 # target to generate assembly for a file
-View/CI.cpp.s:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.s
-.PHONY : View/CI.cpp.s
+View/UI.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/UI.cpp.s
+.PHONY : View/UI.cpp.s
 
 main.o: main.cpp.o
 
@@ -276,9 +276,9 @@ help:
 	@echo "... Model/Board.o"
 	@echo "... Model/Board.i"
 	@echo "... Model/Board.s"
-	@echo "... View/CI.o"
-	@echo "... View/CI.i"
-	@echo "... View/CI.s"
+	@echo "... View/UI.o"
+	@echo "... View/UI.i"
+	@echo "... View/UI.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
