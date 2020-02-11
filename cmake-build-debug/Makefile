@@ -150,6 +150,33 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+Model/AI.o: Model/AI.cpp.o
+
+.PHONY : Model/AI.o
+
+# target to build an object file
+Model/AI.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/AI.cpp.o
+.PHONY : Model/AI.cpp.o
+
+Model/AI.i: Model/AI.cpp.i
+
+.PHONY : Model/AI.i
+
+# target to preprocess a source file
+Model/AI.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/AI.cpp.i
+.PHONY : Model/AI.cpp.i
+
+Model/AI.s: Model/AI.cpp.s
+
+.PHONY : Model/AI.s
+
+# target to generate assembly for a file
+Model/AI.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/AI.cpp.s
+.PHONY : Model/AI.cpp.s
+
 Model/Board.o: Model/Board.cpp.o
 
 .PHONY : Model/Board.o
@@ -177,32 +204,32 @@ Model/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/Board.cpp.s
 .PHONY : Model/Board.cpp.s
 
-Model/UI.o: Model/UI.cpp.o
+View/CI.o: View/CI.cpp.o
 
-.PHONY : Model/UI.o
+.PHONY : View/CI.o
 
 # target to build an object file
-Model/UI.cpp.o:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.o
-.PHONY : Model/UI.cpp.o
+View/CI.cpp.o:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.o
+.PHONY : View/CI.cpp.o
 
-Model/UI.i: Model/UI.cpp.i
+View/CI.i: View/CI.cpp.i
 
-.PHONY : Model/UI.i
+.PHONY : View/CI.i
 
 # target to preprocess a source file
-Model/UI.cpp.i:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.i
-.PHONY : Model/UI.cpp.i
+View/CI.cpp.i:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.i
+.PHONY : View/CI.cpp.i
 
-Model/UI.s: Model/UI.cpp.s
+View/CI.s: View/CI.cpp.s
 
-.PHONY : Model/UI.s
+.PHONY : View/CI.s
 
 # target to generate assembly for a file
-Model/UI.cpp.s:
-	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/Model/UI.cpp.s
-.PHONY : Model/UI.cpp.s
+View/CI.cpp.s:
+	$(MAKE) -f CMakeFiles/Battleship372.dir/build.make CMakeFiles/Battleship372.dir/View/CI.cpp.s
+.PHONY : View/CI.cpp.s
 
 main.o: main.cpp.o
 
@@ -243,12 +270,15 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... Model/AI.o"
+	@echo "... Model/AI.i"
+	@echo "... Model/AI.s"
 	@echo "... Model/Board.o"
 	@echo "... Model/Board.i"
 	@echo "... Model/Board.s"
-	@echo "... Model/UI.o"
-	@echo "... Model/UI.i"
-	@echo "... Model/UI.s"
+	@echo "... View/CI.o"
+	@echo "... View/CI.i"
+	@echo "... View/CI.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

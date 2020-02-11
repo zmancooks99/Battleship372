@@ -86,16 +86,22 @@
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Game.h">
 			<Option target="Battleship372"/>
 		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/AI.cpp">
+			<Option target="Battleship372"/>
+		</Unit>
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/AI.h">
+			<Option target="Battleship372"/>
+		</Unit>
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp">
 			<Option target="Battleship372"/>
 		</Unit>
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.h">
 			<Option target="Battleship372"/>
 		</Unit>
-		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.cpp">
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/CI.cpp">
 			<Option target="Battleship372"/>
 		</Unit>
-		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/UI.h">
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/CI.h">
 			<Option target="Battleship372"/>
 		</Unit>
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/main.cpp">

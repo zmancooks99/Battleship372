@@ -6,7 +6,7 @@
 #define BATTLESHIP372_GAME_H
 
 #include "Model/Board.h"
-#include "Model/UI.h"
+#include "Model/AI.h"
 
 class Game {
 
