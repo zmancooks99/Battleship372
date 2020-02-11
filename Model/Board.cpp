@@ -14,10 +14,7 @@ int Board::index(int x, int y) {
     return ((--y)*_BOARD_DIM) + (--x);
 }
 
-int Board::getCoord(int i) {
-    if(i > _b.size())
-        throw std::out_of_range("INDEX IS OUT OF RANGE");
-}
+
 int Board::at(int x, int y) {
     return _b.at(index(x,y));
 }
