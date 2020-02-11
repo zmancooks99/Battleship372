@@ -6,7 +6,7 @@
 #define BATTLESHIP372_BOARD_H
 
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include <string>
 class Board {
 private:
