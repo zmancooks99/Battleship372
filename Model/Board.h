@@ -6,7 +6,8 @@
 #define BATTLESHIP372_BOARD_H
 
 #include <vector>
-
+#include <exception>
+#include <string>
 class Board {
 private:
     const int _BOARD_DIM = 10;
@@ -17,12 +18,17 @@ private:
 
     std::vector<int> _b;
 
-    int getLoc(int x, int y);
+    int getCoord(int i);
 public:
     Board();
 
     int at(int x, int y);
-    int set(int x, int y);
+    int at(int i);
+    int set(int x, int y, int val);
+    int set(int i, int val);
+    int index(int x, int y);
+    bool addShip(int startX, int endX, int startY, int endY);
+    int addShot(int x, int y);
 };
 
 
