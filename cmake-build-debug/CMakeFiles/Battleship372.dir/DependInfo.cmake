@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ZacharyMason/CLionProjects/Battleship372/Game.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Game.cpp.o"
   "/Users/ZacharyMason/CLionProjects/Battleship372/Model/AI.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Model/AI.cpp.o"
   "/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/Model/Board.cpp.o"
-  "/Users/ZacharyMason/CLionProjects/Battleship372/View/CI.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/View/CI.cpp.o"
+  "/Users/ZacharyMason/CLionProjects/Battleship372/View/UI.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/View/UI.cpp.o"
   "/Users/ZacharyMason/CLionProjects/Battleship372/main.cpp" "/Users/ZacharyMason/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

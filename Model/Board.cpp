@@ -30,7 +30,7 @@ int Board::set(int x, int y, int val) {
 
 int Board::set(int i, int val) {
     if (val != _HIT && val != _EMPTY && val != _SHIP && val != _MISS) {
-        std::string e = "PARAM IS NOT A VALID STATE FOR POSITION " + std::to_string(x) + "," + std::to_string(y);
+        std::string e = "PARAM IS NOT A VALID STATE FOR POSITION";
         throw std::invalid_argument(e);
     }
     _b[i] = val;

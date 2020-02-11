@@ -98,10 +98,10 @@
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/Model/Board.h">
 			<Option target="Battleship372"/>
 		</Unit>
-		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/CI.cpp">
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/UI.cpp">
 			<Option target="Battleship372"/>
 		</Unit>
-		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/CI.h">
+		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/View/UI.h">
 			<Option target="Battleship372"/>
 		</Unit>
 		<Unit filename="/Users/ZacharyMason/CLionProjects/Battleship372/main.cpp">
