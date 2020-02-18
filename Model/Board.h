@@ -17,7 +17,7 @@ private:
     const int _HIT = 3;
 
     std::vector<int> _b;
-
+    //std::vector<std::vector<int, int>> _ships;
 public:
     Board();
 
@@ -28,6 +28,7 @@ public:
     int index(int x, int y);
     bool addShip(int startX, int endX, int startY, int endY);
     int addShot(int x, int y);
+    bool checkShot(int x, int y);
 };
 
 

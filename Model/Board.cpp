@@ -4,6 +4,8 @@
 
 #include "Board.h"
 
+using std::vector;
+
 Board::Board() : _b(_BOARD_DIM*_BOARD_DIM){
 
 }
@@ -37,6 +39,7 @@ int Board::set(int i, int val) {
     return val;
 }
 bool Board::addShip(int startX, int endX, int startY, int endY) {
+
     if(startX < endX) {
         if(at(startX, startY) == _EMPTY) {
             set(startX, startY, _SHIP);
@@ -75,4 +78,13 @@ int Board::addShot(int x, int y) {
         return _MISS;
     }
     throw std::invalid_argument("INVALID SHOT FIRED -- NOT AN EMPTY SPACE");
+}
+
+bool Board::checkShot(int x, int y) {
+    int i;
+    try {
+        i = index(x, y);
+    } catch(std::out_of_range e) {return false;}
+
+    return (_b.at(i) == _EMPTY || _b.at(i) == _SHIP) ? true:false;
 }
