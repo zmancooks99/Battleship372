@@ -15,9 +15,14 @@ private:
     const int _SHIP = 1;
     const int _MISS = 2;
     const int _HIT = 3;
+    const int _SUNK = 5;
+
+    const int _SHOT = 2;
 
     std::vector<int> _b;
-    //std::vector<std::vector<int, int>> _ships;
+    std::vector<int> _ships;
+    int _shipID;
+
 public:
     Board();
 
@@ -29,6 +34,7 @@ public:
     bool addShip(int startX, int endX, int startY, int endY);
     int addShot(int x, int y);
     bool checkShot(int x, int y);
+    bool isSunk(int ship);
 };
 
 
