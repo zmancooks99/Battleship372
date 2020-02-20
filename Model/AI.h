@@ -7,6 +7,9 @@
 
 
 class AI {
+private:
+
+public:
 
 };
 
