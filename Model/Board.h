@@ -63,10 +63,16 @@ public:
     //Return the literal index in _board for a set of coordinates
     int index(int x, int y);
 
-    //
+    //Adds a ship based on a starting and ending x and y coordinates
     bool addShip(int startX, int endX, int startY, int endY);
+
+    //Adds a shot at the specified coordinates
     int addShot(int x, int y);
+
+    //Confirms that making a shot is legal at location x,y
     bool checkShot(int x, int y);
+
+    //Checks if ship with ID "ship" has been sunk
     bool isSunk(int ship);
 };
 
