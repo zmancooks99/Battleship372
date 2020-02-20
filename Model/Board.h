@@ -61,12 +61,16 @@ public:
     int set(int i, int val);
 
     //Return the literal index in _board for a set of coordinates
+    //throws std::out_of_range()
     int index(int x, int y);
 
     //Adds a ship based on a starting and ending x and y coordinates
+    //Ships added recursively
+    //throws std::runtime_error()
     bool addShip(int startX, int endX, int startY, int endY);
 
     //Adds a shot at the specified coordinates
+    //throws std::invalid_argument()
     int addShot(int x, int y);
 
     //Confirms that making a shot is legal at location x,y
