@@ -1,3 +1,0 @@
-C:/Users/maran/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/Battleship372.dir
-C:/Users/maran/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/maran/CLionProjects/Battleship372/cmake-build-debug/CMakeFiles/rebuild_cache.dir
