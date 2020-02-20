@@ -3,6 +3,7 @@
 //
 
 #include "UI.h"
+#include <iostream>
 
 using std::pair;
 
@@ -11,7 +12,7 @@ pair<int, int> UI::getShot() {
     return pair<int,int>(0, 0);
 }
 
-//PROTOTYPE -- NEEDS TO BE WRITTEN
+//PROTOTYPE -- Will test to see if works.
 void UI::shotInvalid(pair<int, int>) {
-
+    std::cout << "This shot is invalid, please try again" << std::endl;
 }
