@@ -6,7 +6,8 @@
 
 using std::vector;
 
-Board::Board() : _b(_BOARD_DIM*_BOARD_DIM), _ships(_BOARD_DIM*_BOARD_DIM, _EMPTY), _shipID(1){ }
+Board::Board() : Board(10) { }
+Board::Board(int BoardDim) : _BOARD_DIM(BoardDim), _board(_BOARD_DIM * _BOARD_DIM), _ships(_BOARD_DIM * _BOARD_DIM, _EMPTY), _shipID(1){ }
 
 int Board::index(int x, int y) {
     if(x > _BOARD_DIM || y > _BOARD_DIM || x < 0 || y < 0)
@@ -14,13 +15,12 @@ int Board::index(int x, int y) {
     return ((--y)*_BOARD_DIM) + (--x);
 }
 
-
 int Board::at(int x, int y) {
-    return _b.at(index(x,y));
+    return _board.at(index(x, y));
 }
 
 int Board::at(int i) {
-    return _b.at(i);
+    return _board.at(i);
 }
 
 int Board::set(int x, int y, int val) {
@@ -33,7 +33,7 @@ int Board::set(int i, int val) {
         std::string e = "PARAM IS NOT A VALID STATE FOR POSITION";
         throw std::invalid_argument(e);
     }
-    _b[i] = val;
+    _board[i] = val;
     return val;
 }
 bool Board::addShip(int startX, int endX, int startY, int endY) {
@@ -73,7 +73,7 @@ bool Board::addShip(int startX, int endX, int startY, int endY) {
 int Board::addShot(int x, int y) {
     int i = index(x, y);
     if(checkShot(x,y)) {
-        int result = set(i, _b.at(i) + _SHOT);
+        int result = set(i, _board.at(i) + _SHOT);
         if(result = _HIT) {
             int id = _ships[i];
             _ships[i] *= -1;
@@ -92,7 +92,7 @@ bool Board::checkShot(int x, int y) {
         i = index(x, y);
     } catch(std::out_of_range e) {return false;}
 
-    return (_b.at(i) == _EMPTY || _b.at(i) == _SHIP) ? true:false;
+    return (_board.at(i) == _EMPTY || _board.at(i) == _SHIP) ? true : false;
 }
 
 bool Board::isSunk(int ship) {
