@@ -1,5 +1,6 @@
 //
 // Created by Zachary Mason on 2/10/20.
+// Code by Riley Maranville
 //
 
 #ifndef BATTLESHIP372_UI_H
@@ -8,6 +9,8 @@
 #include <utility>
     //std::pair
 #include <vector>
+#include <stdexcept>
+#include <string>
 
 class UI {
 private:
@@ -24,9 +27,9 @@ private:
     const int _HIT = 3;
 public:
     //---------User Input Functions
-    bool Start();
+    bool Start(); //When program starts menu
     std::pair<int, int> getShot(); //Grabs user input for Shots
-
+    int placeBattleships(int firstx, int firsty, int endx, int endy); //Positions is for each ship
 
     //---------User Output Functions
     int printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)

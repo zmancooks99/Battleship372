@@ -1,5 +1,6 @@
 //
 // Created by Zachary Mason on 2/10/20.
+// Code by Riley Maranville
 //
 
 #include "UI.h"
@@ -44,14 +45,15 @@ int UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
     }
 
     //------------------------PRINTING BORDER------------------------------
+    std::cout << "-" << std::endl; //starts top border
+    for(int topborder = 0+(65); topborder < boardDim+(65); topborder++) //prints top border with ASCII Letters
+        std::cout << (char)topborder;
 
-    for(int topborder = 0; topborder < boardDim+2; topborder++) //prints top border
-        std::cout << "-";
+    std::cout << "-" << std::endl; //finishes top border
 
-    std::cout << std::endl; //finishes top border
     for(int x = 0; x < boardDim; x++) //Loops over horizontal axis, including left and right boarders
     {
-        std::cout << "|"; //left border
+        std::cout << x+1; //left border
         for(int y = 0; y < boardDim; x++)
         {
             std::cout << boardVect[x,y]; //prints the vector of the board
@@ -103,4 +105,42 @@ void UI::Win() {
 
 void UI::Loss() {
     std::cout << "You have lost the game!" << std:: endl;
+}
+
+int UI::placeBattleships(int firstx, int firsty, int endx, int endy) {
+    int _TEMP_VALUE_LENGTH_SHIP = 2;
+    char charx; int x; //Allows user to input A as the X Axies
+    int y;
+    char direction;
+    std::cout << "You are currently placing your " << _TEMP_VALUE_LENGTH_SHIP << " long ship." << std::endl;
+    std::cout << "Which Letter will you be placing this at? (Capitals Only)" << std::endl;
+    std::cin >> charx;
+    x = charx-64;
+    std::cout << "Which Number will you be placing this at?" << std::endl;
+    std::cin >> y;
+    std::cout << "Which Direction will you be placing towards?" << std::endl;
+    std::cout << "Use L for Left, R for Right, U for Up, D for Down" << std::endl;
+    std::cin >> direction;
+    switch(direction)
+    {
+        case 'L':
+            return x, y, x-_TEMP_VALUE_LENGTH_SHIP, y;
+            break;
+        case 'R':
+            return x, y, x+_TEMP_VALUE_LENGTH_SHIP, y;
+            break;
+        case 'U':
+            return x, y, x, y-_TEMP_VALUE_LENGTH_SHIP;
+            break;
+        case 'D':
+            return x, y, x, y+_TEMP_VALUE_LENGTH_SHIP;
+            break;
+        default:
+            std::string e = "INVALID VARIABLE INPUTTED";
+            throw std::invalid_argument(e);
+            break;
+    }
+    std::string e = "UI.CPP placeBattleship is broke";
+    throw std::invalid_argument(e);
+    return 0, 0, 0, 0;
 }
