@@ -23,9 +23,21 @@ private:
     //Represents an hit shot on _board
     const int _HIT = 3;
 public:
-    int printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)
+    //---------User Input Functions
+    bool Start();
     std::pair<int, int> getShot(); //Grabs user input for Shots
-    void shotInvalid(std::pair<int, int>); //Prints invalid shot
+
+
+    //---------User Output Functions
+    int printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)
+    void shotInvalid(std::pair<int, int>); //Prints invalid shot to User
+
+    void targetSunk(); //When Shot Sinks a ship
+    void targetHit(); //When Shot Hits a ship
+    void targetMiss(); //When Shot Misses a ship
+
+    void Win(); //Game Complete
+    void Loss();  //Game Lost
 };
 
 
