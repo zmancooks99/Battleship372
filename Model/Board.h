@@ -80,6 +80,18 @@ public:
 
     //Checks if ship with ID "ship" has been sunk
     bool isSunk(int ship);
+
+    //Checks if all of the ships are sunk (ie. game over)
+    bool allSunk();
+
+    //Returns the dimension of the board (sqrt of the number of total spaces)
+    int getBoardDim();
+
+    //returns the board as constant reference
+    const std::vector<int>& getBoard();
+
+    //returns the ship board as constant reference
+    const std::vector<int>& getShips();
 };
 
 

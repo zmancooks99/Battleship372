@@ -115,3 +115,17 @@ bool Board::checkShot(int x, int y) {
 bool Board::isSunk(int ship) {
     return std::find(_ships.begin(), _ships.end(), ship) == _ships.end();
 }
+
+bool Board::allSunk() {
+    //If any locations in _ships are > 0 then ships are left alive.
+    for(int s : _ships) {
+        if (s > 0) return false;
+    }
+    return true;
+}
+
+int Board::getBoardDim() { return _BOARD_DIM; }
+
+const vector<int>& Board::getBoard() { return _board; }
+
+const vector<int>& Board::getShips() { return _ships; }

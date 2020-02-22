@@ -18,6 +18,22 @@
 class Game {
 
 private:
+
+    //Represents an empty space on _board
+    const int _EMPTY = 0;
+
+    //Represents a ship space on _board
+    const int _SHIP = 1;
+
+    //Represents an missed shot on _board
+    const int _MISS = 2;
+
+    //Represents an hit shot on _board
+    const int _HIT = 3;
+
+    //Returned from addShot() to represent that it was a hit and sunk the ship
+    const int _SUNK = 5;
+
     const int _NUM_PLAYERS = 2;
     const bool _COMPUTER = false;
     const int _CARRIER = 5;
@@ -25,6 +41,8 @@ private:
     const int _DESTROYER = 3;
     const int _SUBMARINE = 3;
     const int _PATROLBOAT = 2;
+
+    bool _gameOver;
     std::vector<Board> _boards;
     AI _ai;
     std::vector<UI> _uis;
