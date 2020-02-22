@@ -44,8 +44,8 @@ public:
      * WHY ARE THESE CAPITALIZED?? PLS MAKE THEM NOT --ZACH
      *
      */
-    void Win(); //Game Complete
-    void Loss();  //Game Lost
+    void win(); //Game Complete
+    void loss();  //Game Lost
     /*
      *
      *

@@ -39,12 +39,8 @@ void UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
                 boardVect[i] = '#';
                 break;
             default:
-                /*
-                 *
-                 * THIS SHOULDN'T PRINT AN ERROR TO USER. THEY CAN'T FIX. THROW AN ERROR FOR GAME TO HANDLE --ZACH
-                 *
-                 */
-                std::cout << "UI.cpp failure (printBoard)" << std::endl;
+                std::string e = "UI Was passed incorrect numbers";
+                throw std::invalid_argument(e);
                 break;
         }
     }
@@ -106,11 +102,11 @@ void UI::targetMiss() {
     std::cout << "You have miss a ship!" << std::endl;
 }
 
-void UI::Win() {
+void UI::win() {
     std::cout << "You have won the game!" << std::endl;
 }
 
-void UI::Loss() {
+void UI::loss() {
     std::cout << "You have lost the game!" << std:: endl;
 }
 
