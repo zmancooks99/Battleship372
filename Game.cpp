@@ -36,10 +36,10 @@ void Game::doTurn() {
                 u.targetSunk();
             u.printBoard(b.getBoardDim(), b.getBoard());
             if (b.allSunk()) {
-                u.Win();
+                u.win();
                 for(UI u1 : _uis) {
                     if(&u != &u1)
-                        u1.Loss();
+                        u1.loss();
                 }
                 _gameOver = true;
                 break;

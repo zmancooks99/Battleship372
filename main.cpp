@@ -12,9 +12,15 @@ int main() {
     _boardArray.assign(100, 0);
     test.printBoard(_boardLength, _boardArray);
     //-----------PRINT BOARD--------------------
+    //-------------Place Battleship------------
+    test.placeBattleships(2);
+    test.placeBattleships(3);
+    test.placeBattleships(3);
+    test.placeBattleships(4);
+    test.placeBattleships(5);
     //-------------All the UI Outputs-----------
-    test.Win();
-    test.Loss();
+    test.win();
+    test.loss();
     test.targetHit();
     test.targetMiss();
     test.targetSunk();
