@@ -55,9 +55,11 @@ public:
     int at(int i);
 
     //Sets _board[x,y] to a specific value (_HIT, _MISS, etc)
+    //throws std::invalid_argument()
     int set(int x, int y, int val);
 
     //Same as other set, but with literal index in _board instead of coordinates
+    //throws std::invalid_argument()
     int set(int i, int val);
 
     //Return the literal index in _board for a set of coordinates
