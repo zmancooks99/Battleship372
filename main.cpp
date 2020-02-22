@@ -19,8 +19,8 @@ int main() {
     test.placeBattleships(4);
     test.placeBattleships(5);
     //-------------All the UI Outputs-----------
-    test.Win();
-    test.Loss();
+    test.win();
+    test.loss();
     test.targetHit();
     test.targetMiss();
     test.targetSunk();
