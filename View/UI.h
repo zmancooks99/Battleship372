@@ -39,8 +39,17 @@ public:
     void targetHit(); //When Shot Hits a ship
     void targetMiss(); //When Shot Misses a ship
 
+    /*
+     *
+     * WHY ARE THESE CAPITALIZED?? PLS MAKE THEM NOT --ZACH
+     *
+     */
     void Win(); //Game Complete
     void Loss();  //Game Lost
+    /*
+     *
+     *
+     */
 };
 
 

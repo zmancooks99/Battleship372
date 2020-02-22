@@ -39,6 +39,11 @@ void UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
                 boardVect[i] = '#';
                 break;
             default:
+                /*
+                 *
+                 * THIS SHOULDN'T PRINT AN ERROR TO USER. THEY CAN'T FIX. THROW AN ERROR FOR GAME TO HANDLE --ZACH
+                 *
+                 */
                 std::cout << "UI.cpp failure (printBoard)" << std::endl;
                 break;
         }
@@ -126,22 +131,14 @@ int UI::placeBattleships(int _TEMP_VALUE_LENGTH_SHIP) {
     {
         case 'L':
             return x, y, x-_TEMP_VALUE_LENGTH_SHIP, y;
-            break;
         case 'R':
             return x, y, x+_TEMP_VALUE_LENGTH_SHIP, y;
-            break;
         case 'U':
             return x, y, x, y-_TEMP_VALUE_LENGTH_SHIP;
-            break;
         case 'D':
             return x, y, x, y+_TEMP_VALUE_LENGTH_SHIP;
-            break;
         default:
-            std::string e = "INVALID VARIABLE INPUTTED";
+            std::string e = "INVALID VARIABLE INPUTTED TO UI.CPP";
             throw std::invalid_argument(e);
-            break;
     }
-    std::string e = "UI.CPP placeBattleship is broke";
-    throw std::invalid_argument(e);
-    return 0, 0, 0, 0;
 }
