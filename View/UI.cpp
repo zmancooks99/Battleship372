@@ -109,8 +109,7 @@ void UI::Loss() {
     std::cout << "You have lost the game!" << std:: endl;
 }
 
-int UI::placeBattleships(int firstx, int firsty, int endx, int endy) {
-    int _TEMP_VALUE_LENGTH_SHIP = 2;
+int UI::placeBattleships(int _TEMP_VALUE_LENGTH_SHIP) {
     char charx; int x; //Allows user to input A as the X Axies
     int y;
     char direction;
