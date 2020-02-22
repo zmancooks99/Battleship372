@@ -4,50 +4,50 @@ Priorities:
 
 1 |
 Get Board to display in ASCII Art |
-Low Time
+1 hour
 
 2 |
 Create ability to place ships (Rotate and Place) |
-Medium Time
+4 hours
 
 3 |
 Computer can place ships on board randomly |
-Low Time
+1 hour
 
 4 |
 User can shoot ships on the board |
-Low Time
+1 hour
 
 5 |
 Computer can shoot onto board (semi random) |
-Medium Time
+4 hours
 
 6 |
 Detect when game is over |
-Low Time
+1 hour
 
 7 |
 GUI for User to Start, Pause, Play and Exit Games |
-High Time
+8 hours
 
 8 |
 Implement better graphics (convert ASCII to Textures) and sound effects. |
-Medium TIme
+4 hours
 
 9 |
 Computer Difficulties (How Accurate/Luck) |
-Low Time
+1 hour
 
 10 |
 Multiplayer on One Computer  |
-Medium Time
+1 hour
 
 11 |
 Multiplayer over Network |
-High Time
+8 hours
 
 12 |
 4 Player Battleship |
-High Time
+8 huors
 
 Using C++, Linux, undecided on how to implement Graphics (instead of ASCII Art)
