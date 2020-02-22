@@ -32,7 +32,7 @@ public:
     int placeBattleships(int firstx, int firsty, int endx, int endy); //Positions is for each ship
 
     //---------User Output Functions
-    int printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)
+    void printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)
     void shotInvalid(std::pair<int, int>); //Prints invalid shot to User
 
     void targetSunk(); //When Shot Sinks a ship

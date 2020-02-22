@@ -19,9 +19,9 @@ void UI::shotInvalid(pair<int, int>) {
 }
 
 //UNFINISHED -- NEEDS inputBoardVect translation, unknown if correct
-int UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
+void UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
 
-    char boardVect[inputBoardVect.size()];
+    std::vector<char> boardVect(inputBoardVect.size());
     for(int i = 0; i < inputBoardVect.size(); i++)
     {
         switch(inputBoardVect[i])
@@ -45,7 +45,7 @@ int UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
     }
 
     //------------------------PRINTING BORDER------------------------------
-    std::cout << "-" << std::endl; //starts top border
+    std::cout << " -"; //starts top border
     for(int topborder = 0+(65); topborder < boardDim+(65); topborder++) //prints top border with ASCII Letters
         std::cout << (char)topborder;
 
@@ -53,16 +53,18 @@ int UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
 
     for(int x = 0; x < boardDim; x++) //Loops over horizontal axis, including left and right boarders
     {
+        if (x+1 < 10)
+            std::cout << " ";
         std::cout << x+1; //left border
-        for(int y = 0; y < boardDim; x++)
+        for(int y = 0; y < boardDim; y++)
         {
             std::cout << boardVect[x,y]; //prints the vector of the board
         }
         std::cout << "|" << std::endl; //right border and end-line
     }
-
+    std::cout << " ";
     for(int botborder = 0; botborder < boardDim+2; botborder++) //prints bottom border
-        std::cout << "--";
+        std::cout << "-";
     std::cout << std::endl; //finishes top border
 }
 
