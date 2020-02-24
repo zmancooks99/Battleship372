@@ -1,23 +1,25 @@
 #include <iostream>
 #include <vector>
 
-#include "catch.hpp"
+#include "Model/Board.h"
+#include "Model/AI.h"
 #include "View/UI.h"
 
 int main() {
+
     //------------PRINT BOARD-------------------
     UI test;
-    int _boardLength = 10;
-    std::vector<int> _boardArray(100);
-    _boardArray.assign(100, 0);
-    test.printBoard(_boardLength, _boardArray);
+    Board testBoard;
+    test.printBoard(testBoard.getBoardDim(), testBoard.getBoard());
     //-----------PRINT BOARD--------------------
     //-------------Place Battleship------------
-    test.placeBattleships(2);
-    test.placeBattleships(3);
-    test.placeBattleships(3);
-    test.placeBattleships(4);
-    test.placeBattleships(5);
+    int startX = test.placeBeginX(1);
+    int startY = test.placeBeginY();
+    int endX = test.placeEndX(1);
+    int endY = test.placeEndY(1);
+
+    testBoard.addShip(startX,startY,endX,endY);
+    test.printBoard(testBoard.getBoardDim(), testBoard.getBoard());
     //-------------All the UI Outputs-----------
     test.win();
     test.loss();

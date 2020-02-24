@@ -41,14 +41,13 @@ void UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
             default:
                 std::string e = "UI Was passed incorrect numbers";
                 throw std::invalid_argument(e);
-                break;
         }
     }
 
     //------------------------PRINTING BORDER------------------------------
-    std::cout << " -"; //starts top border
+    std::cout << " - "; //starts top border
     for(int topborder = 0+(65); topborder < boardDim+(65); topborder++) //prints top border with ASCII Letters
-        std::cout << (char)topborder;
+        std::cout << (char)topborder << ' ';
 
     std::cout << "-" << std::endl; //finishes top border
 
@@ -56,16 +55,16 @@ void UI::printBoard(int boardDim, std::vector<int> inputBoardVect) {
     {
         if (x+1 < 10)
             std::cout << " ";
-        std::cout << x+1; //left border
+        std::cout << x+1 << ' '; //left border
         for(int y = 0; y < boardDim; y++)
         {
-            std::cout << boardVect[x,y]; //prints the vector of the board
+            std::cout << boardVect[x,y] << ' '; //prints the vector of the board
         }
         std::cout << "|" << std::endl; //right border and end-line
     }
     std::cout << " ";
     for(int botborder = 0; botborder < boardDim+2; botborder++) //prints bottom border
-        std::cout << "-";
+        std::cout << "- ";
     std::cout << std::endl; //finishes top border
 }
 
@@ -109,8 +108,63 @@ void UI::win() {
 void UI::loss() {
     std::cout << "You have lost the game!" << std:: endl;
 }
+/****** Split up placeBattleships so it can return begin x,y and end x,y ******/
+char charx;
+int y;
+char direction;
 
-int UI::placeBattleships(int _TEMP_VALUE_LENGTH_SHIP) {
+int UI::placeBeginX (int _TEMP_VALUE_LENGTH_SHIP){
+        std::cout << "You are currently placing your " << _TEMP_VALUE_LENGTH_SHIP << " long ship." << std::endl;
+        std::cout << "Which Letter will you be placing this at? (Capitals Only)" << std::endl;
+        std::cin >> charx;
+        return charx-65;
+}
+
+int UI::placeBeginY (){
+        std::cout << "Which Number will you be placing this at?" << std::endl;
+        std::cin >> y;
+        return y-1;
+}
+
+int UI::placeEndX (int _TEMP_VALUE_LENGTH_SHIP) {
+    int x = charx-65;
+    std::cout << "Which Direction will you be placing towards?" << std::endl;
+    std::cout << "Use L for Left, R for Right, U for Up, D for Down" << std::endl;
+    std::cin >> direction;
+    switch(direction)
+    {
+        case 'L':
+            return x -_TEMP_VALUE_LENGTH_SHIP;
+        case 'R':
+            return x +_TEMP_VALUE_LENGTH_SHIP;
+        case 'U':
+            return x;
+        case 'D':
+            return x;
+        default:
+            std::string e = "INVALID VARIABLE INPUTTED TO UI.CPP";
+            throw std::invalid_argument(e);
+    }
+}
+
+int UI::placeEndY (int _TEMP_VALUE_LENGTH_SHIP) {
+    switch(direction)
+    {
+        case 'L':
+            return y;
+        case 'R':
+            return y;
+        case 'U':
+            return y-_TEMP_VALUE_LENGTH_SHIP-1;
+        case 'D':
+            return y+_TEMP_VALUE_LENGTH_SHIP-1;
+        default:
+            std::string e = "INVALID VARIABLE INPUTTED TO UI.CPP";
+            throw std::invalid_argument(e);
+    }
+}
+
+/*int UI::placeBattleships(int _TEMP_VALUE_LENGTH_SHIP) {
     char charx; int x; //Allows user to input A as the X Axies
     int y;
     char direction;
@@ -137,4 +191,4 @@ int UI::placeBattleships(int _TEMP_VALUE_LENGTH_SHIP) {
             std::string e = "INVALID VARIABLE INPUTTED TO UI.CPP";
             throw std::invalid_argument(e);
     }
-}
+}*/
