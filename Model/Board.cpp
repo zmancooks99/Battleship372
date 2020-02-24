@@ -2,6 +2,7 @@
 // Created by Zachary Mason on 2/9/20.
 //
 
+#include <algorithm>
 #include "Board.h"
 
 using std::vector;
@@ -38,7 +39,7 @@ int Board::set(int x, int y, int val) {
     return val;
 }
 
-bool Board::addShip(int startX, int endX, int startY, int endY) {
+bool Board::addShip(int startX, int startY, int endX, int endY) {
 
     //LOGIC FOR PLACING SHIP HORIZONTALLY
     if(startX < endX) {

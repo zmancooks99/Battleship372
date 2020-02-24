@@ -69,7 +69,7 @@ public:
     //Adds a ship based on a starting and ending x and y coordinates
     //Ships added recursively
     //throws std::runtime_error()
-    bool addShip(int startX, int endX, int startY, int endY);
+    bool addShip(int startX, int startY, int endX, int endY);
 
     //Adds a shot at the specified coordinates
     //throws std::invalid_argument()

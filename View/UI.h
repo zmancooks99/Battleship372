@@ -29,7 +29,12 @@ public:
     //---------User Input Functions
     bool Start(); //When program starts menu
     std::pair<int, int> getShot(); //Grabs user input for Shots
-    int placeBattleships(int _TEMP_VALUE_LENGTH_SHIP); //Positions is for each ship
+    int placeBeginX(int _TEMP_VALUE_LENGTH_SHIP);
+    int placeBeginY();
+    int placeEndX (int _TEMP_VALUE_LENGTH_SHIP);
+    int placeEndY (int _TEMP_VALUE_LENGTH_SHIP);
+
+    // placeBattleships(int _TEMP_VALUE_LENGTH_SHIP); //Positions is for each ship
 
     //---------User Output Functions
     void printBoard(int boardDim, std::vector<int> boardVect); //(int Board Dimension, int Board Vector)
